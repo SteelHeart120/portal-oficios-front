@@ -1,0 +1,37 @@
+
+
+/* Overriding global css ant design */
+
+/*	Menu */
+
+.ant-menu-item {
+
+  padding: 0 20px !important;
+  margin: 0 !important;
+}
+
+.ant-menu-item-active {
+}
+
+.ant-menu-item-selected {
+}
+
+/* SubMenu */
+/* .ant-menu-submenu-horizontal .ant-menu-submenu-selected */
+.ant-menu-submenu {
+  padding: 0 20px !important;
+  margin: 0 !important;
+}
+
+.ant-menu-submenu-active {
+  background: #4fbfa8 !important;
+}
+
+.ant-menu-submenu-selected {
+  background: #4fbfa8 !important;
+} 
+
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
+  background-color: #4fbfa8 !important;
+}
