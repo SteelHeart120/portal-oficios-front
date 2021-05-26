@@ -49,21 +49,31 @@ export default function AppLayout(props) {
                         </Breadcrumb>
                         <Layout className="site-layout-background" style={{ padding: '24px 0' }}>
                             <Sider className="site-layout-background" width={200}>
-                            <Menu
-                                mode="inline"
-                                defaultSelectedKeys={['1']}
-                                defaultOpenKeys={['sub1']}
-                                style={{ height: '100%' }}
-                            >
+                                <Menu
+                                    mode="inline"
+                                    defaultSelectedKeys={['1']}
+                                    defaultOpenKeys={['sub3']}
+                                    onSelect={() => {}}
+                                    style={{ height: '100%' }}
+                                    selectable={false}
+                                    inlineCollapsed={false}
+                                    openKeys={['sub3']}
+                                >
+                                    {/* <SubMenu key="sub3" title="Ladies">
+                                        <Menu.Item key="5">option1</Menu.Item>
+                                        <Menu.Item key="6">option2</Menu.Item>
+                                        <Menu.Item key="7">option3</Menu.Item>
+                                        <Menu.Item key="8">option4</Menu.Item>
+                                    </SubMenu> */}
                                     <Menu.ItemGroup key="g1" title="Item 1">
-                                    <Menu.Item key="1">Option 3</Menu.Item>
-                                    <Menu.Item key="2">Option 4</Menu.Item>
-                                </Menu.ItemGroup>
-                                <Menu.ItemGroup key="g2" title="Item 2">
-                                    <Menu.Item key="3">Option 3</Menu.Item>
-                                    <Menu.Item key="4">Option 4</Menu.Item>
-                                </Menu.ItemGroup>
-                            </Menu>
+                                        <Menu.Item key="1">Option 3</Menu.Item>
+                                        <Menu.Item key="2">Option 4</Menu.Item>
+                                    </Menu.ItemGroup>
+                                    <Menu.ItemGroup key="g2" title="Item 2">
+                                        <Menu.Item key="3">Option 3</Menu.Item>
+                                        <Menu.Item key="4">Option 4</Menu.Item>
+                                    </Menu.ItemGroup>
+                                </Menu>
                             </Sider>
                             <Content style={{ padding: '0 24px', minHeight: 280 }}>{props.children}</Content>
                         </Layout>

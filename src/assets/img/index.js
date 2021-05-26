@@ -1,7 +1,9 @@
-import plomeria from './plomeria2.jpg';
-import logo from './logo.png'
+import plomeria from './plomeria.jpg';
+import logo from './logo.png';
+import product1 from './product1.jpg';
 
 export const images = {
     plomeria,
-    logo
+    logo,
+    product1
 }
