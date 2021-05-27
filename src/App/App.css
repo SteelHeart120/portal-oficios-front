@@ -31,6 +31,11 @@
   background: #4fbfa8 !important;
 } 
 
+.ant-menu-item-group-title {
+  color: #4fbfa8;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
 
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item {
   background-color: #4fbfa8 !important;

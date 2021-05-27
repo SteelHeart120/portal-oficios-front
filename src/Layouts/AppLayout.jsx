@@ -71,13 +71,13 @@ export default function AppLayout(props) {
                                         <Menu.Item key="7">option3</Menu.Item>
                                         <Menu.Item key="8">option4</Menu.Item>
                                     </SubMenu> */}
-                                    <Menu.ItemGroup key="g1" title="Item 1">
-                                        <Menu.Item key="1">Option 3</Menu.Item>
-                                        <Menu.Item key="2">Option 4</Menu.Item>
+                                    <Menu.ItemGroup key="g1" title="MEN">
+                                        <Menu.Item key="1">T-shirts</Menu.Item>
+                                        <Menu.Item key="2">Pants</Menu.Item>
                                     </Menu.ItemGroup>
-                                    <Menu.ItemGroup key="g2" title="Item 2">
-                                        <Menu.Item key="3">Option 3</Menu.Item>
-                                        <Menu.Item key="4">Option 4</Menu.Item>
+                                    <Menu.ItemGroup key="g2" title="LADIES">
+                                        <Menu.Item key="3">T-shirts</Menu.Item>
+                                        <Menu.Item key="4">Pants</Menu.Item>
                                     </Menu.ItemGroup>
                                 </Menu>
                             </Sider>
