@@ -37,3 +37,37 @@
 }
 
 /* Text */
+
+h1.ant-typography, .ant-typography h1{
+    font-weight: 500;
+    font-size: 2.25rem;
+}
+
+/* Pagination */
+.ant-pagination-item {
+  color: #4fbfa8;
+  margin-right: 0px !important;
+}
+.ant-pagination-item-active{
+    /* font-weight: 500; */
+    background: #4fbfa8;
+    border-color: #1890ff;
+}
+
+.ant-pagination-item-active a {
+  color: white !important;
+}
+
+.ant-pagination-prev {
+  margin-right: 8px !important;
+}
+
+.ant-pagination-jump-prev {
+  margin-right: 8px !important;
+
+}
+
+.ant-pagination-jump-next {
+  margin-right: 8px !important;
+
+}

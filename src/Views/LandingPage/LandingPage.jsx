@@ -25,8 +25,8 @@ function LandingPage() {
                 <Col >
                     <div className="box">
                         <Title>Ladies</Title>
-                        <Text>In our Ladies department we offer wide selection of the best 
-                            products we have found and carefully selected worldwide.</Text>
+                        <p>In our Ladies department we offer wide selection of the best 
+                            products we have found and carefully selected worldwide.</p>
                     </div>
                 </Col>
             </Row>
