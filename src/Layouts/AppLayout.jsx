@@ -18,7 +18,7 @@ const IconFont = createFromIconfontCN({
 
 export default function AppLayout(props) {
     
-
+console.log(window.location.pathname === '/register');
     return(
         <>
             <Layout>
@@ -54,6 +54,7 @@ export default function AppLayout(props) {
                             <Breadcrumb.Item>Ladies</Breadcrumb.Item>
                         </Breadcrumb>
                         <Layout className="site-layout-background" style={{ padding: '24px 0' }}>
+                            {window.location.pathname !== '/register' ?
                             <Sider className="site-layout-background" width={200}>
                                 <Menu
                                     mode="inline"
@@ -80,13 +81,13 @@ export default function AppLayout(props) {
                                         <Menu.Item key="4">Pants</Menu.Item>
                                     </Menu.ItemGroup>
                                 </Menu>
-                            </Sider>
+                            </Sider> : undefined}
                             <Content style={{ padding: '0 24px', minHeight: 280 }}>{props.children}</Content>
                         </Layout>
                     </Content>
                     <AppFooter >
                         <Row gutter={32}>
-                            <Col span={6} >
+                            <Col lg={6} md={12} >
                                 <Title level={4}>
                                     Pages
                                 </Title>
@@ -106,7 +107,7 @@ export default function AppLayout(props) {
                                     <Text type="secondary">Register</Text>
                                 </div>
                             </Col>
-                            <Col span={6} >
+                            <Col lg={6} md={12} >
                                 <Title level={4}>
                                     Top Categories
                                 </Title>
@@ -127,7 +128,7 @@ export default function AppLayout(props) {
                                     <Text type="secondary">Accesories</Text>
                                 </div>
                             </Col>
-                            <Col span={6} >
+                            <Col lg={6} md={12} >
                                 <Title level={4}>
                                     Where to find us
                                 </Title>
@@ -140,7 +141,7 @@ export default function AppLayout(props) {
                                     <Text type="secondary">Great Britain</Text>
                                 </div>
                             </Col>
-                            <Col span={6} >
+                            <Col lg={6} md={12} >
                                 <Title level={4}>
                                     Get the news
                                 </Title>

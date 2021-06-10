@@ -5,3 +5,9 @@
 .app-general {
     background-color: #f0f0f0 ;
 }
+
+.app-general-col{
+    background-color: white ;
+    padding: 30px;
+    border: solid 1px #e6e6e6;
+}

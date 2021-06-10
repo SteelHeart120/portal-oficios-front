@@ -6,10 +6,12 @@ import { Card } from 'antd';
 import { images } from '../../assets/img/index';
 import { Button, Space, Image } from 'antd';
 import { ShoppingCartOutlined, DownOutlined, UserOutlined } from '@ant-design/icons';
-
+import {
+    Link
+  } from "react-router-dom";
 import './LandingPage.css';
 
-const { Title, Link } = Typography;
+const { Title } = Typography;
 const { Meta } = Card;
 const { Search } = Input;
 
@@ -91,9 +93,9 @@ function LandingPage() {
                             </Row>
 
                             <Row justify="center" align="middle">
-                                    <Button type="secundary" size="small" icon={<ShoppingCartOutlined />}>
-                                        Ver Negocio
-                                    </Button> 
+                                <Button type="secundary" size="small" icon={<ShoppingCartOutlined />}>
+                                    <Link to="/details">Details</Link>
+                                </Button> 
                             </Row>
                     </Card>
                 </Col>
@@ -115,35 +117,10 @@ function LandingPage() {
                             </Row>
 
                             <Row justify="center" align="middle">
-                                    <Button type="secundary" size="small" icon={<ShoppingCartOutlined />}>
-                                        Ver Negocio
-                                    </Button> 
+                                <Button type="secundary" size="small" icon={<ShoppingCartOutlined />}>
+                                <Link to="/details">Details</Link>
+                                </Button> 
                             </Row>
-                    </Card>
-                    
-                </Col>
-                <Col>
-                    <Card
-                            hoverable
-                            style={{ width: 200 }}
-                            cover={<Image
-                                width={200}
-                                preview={false}
-                                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-                              />}
-                        >
-                            <Link href="https://ant.design" target="_blank">
-                                <Title level={5} >Fur coat with very but very very long name</Title>
-                            </Link>
-                            <Row justify="center" align="middle" className="pb-3">
-                                <Meta description="$143.00" />
-                            </Row>
-
-                            <Row justify="center" align="middle">
-                                    <Button type="secundary" size="small" icon={<ShoppingCartOutlined />}>
-                                        Ver Negocio
-                                    </Button> 
-                            </Row>                 
                     </Card>
                     
                 </Col>
@@ -165,9 +142,34 @@ function LandingPage() {
                             </Row>
 
                             <Row justify="center" align="middle">
-                                    <Button type="secundary" size="small" icon={<ShoppingCartOutlined />}>
-                                        Ver Negocio
-                                    </Button> 
+                                <Button type="secundary" size="small" icon={<ShoppingCartOutlined />}>
+                                <Link to="/details">Details</Link>
+                                </Button> 
+                            </Row>                
+                    </Card>
+                    
+                </Col>
+                <Col>
+                    <Card
+                            hoverable
+                            style={{ width: 200 }}
+                            cover={<Image
+                                width={200}
+                                preview={false}
+                                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+                              />}
+                        >
+                            <Link href="https://ant.design" target="_blank">
+                                <Title level={5} >Fur coat with very but very very long name</Title>
+                            </Link>
+                            <Row justify="center" align="middle" className="pb-3">
+                                <Meta description="$143.00" />
+                            </Row>
+
+                            <Row justify="center" align="middle">
+                                <Button type="secundary" size="small" icon={<ShoppingCartOutlined />}>
+                                <Link to="/details">Details</Link>
+                                </Button> 
                             </Row>
                                 
                     </Card>                  
@@ -190,9 +192,9 @@ function LandingPage() {
                             </Row>
 
                             <Row justify="center" align="middle">
-                                    <Button type="secundary" size="small" icon={<ShoppingCartOutlined />}>
-                                        Ver Negocio
-                                    </Button> 
+                                <Button type="secundary" size="small" icon={<ShoppingCartOutlined />}>
+                                    <Link to="/details">Details</Link>
+                                </Button> 
                             </Row>
                                 
                     </Card>                  

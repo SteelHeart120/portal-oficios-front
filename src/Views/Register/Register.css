@@ -1,0 +1,35 @@
+.details-carousel{
+    color: '#fff';
+    line-height: '160px';
+    text-align: center;
+    background: '#364d79';
+}
+
+/* Overriding carousel dots just for details section */
+.ant-carousel .slick-dots-bottom {
+    display: none !important;
+}
+.details-text-general{
+    text-align: center
+
+}
+
+.details-text-description{
+    font-size: small;
+}
+
+.details-button {
+    border-radius: 5px !important;
+    margin-right: 5px;
+}
+
+.details-button-image{
+    width: 90px; 
+    height: 90px;
+    border: none;
+    background: none;
+}
+
+.details-button-image-inactive {
+    opacity: 0.6
+}
